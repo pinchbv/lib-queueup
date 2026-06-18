@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Product</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    core
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.0.1-alpha        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
+                        data-filter=":queueup:core/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":queueup:core/commonMain"
+                                       data-filter=":queueup:core/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    core
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="core::eu.queueup.models.products/Product///PointingToDeclaration//35205944">
+  <div class="breadcrumbs"><a href="../../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">eu.queueup.models.products</a><span class="delimiter">/</span><span class="current">Product</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Product</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">Product</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>productType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>physicalProduct<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ageGroup<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>unitPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>listPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bookingCosts<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>visitGuaranteeCost<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>noDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bestEffectivePrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bestListPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bestDiscountAmount<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bestDiscountPercentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>firstAvailableDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastAvailableDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-2090770294%2FConstructors%2F35205944" anchor-label="Product" id="-2090770294%2FConstructors%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-product.html"><span><span>Product</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2090770294%2FConstructors%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">productType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">physicalProduct<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ageGroup<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">unitPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">listPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bookingCosts<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">visitGuaranteeCost<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">noDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bestEffectivePrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bestListPrice<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bestDiscountAmount<span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bestDiscountPercentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">firstAvailableDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">lastAvailableDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-563589354%2FProperties%2F35205944" anchor-label="ageGroup" id="-563589354%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="age-group.html"><span>age</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-563589354%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="age-group.html">ageGroup</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1386838215%2FProperties%2F35205944" anchor-label="bestDiscountAmount" id="-1386838215%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="best-discount-amount.html"><span>best</span><wbr></wbr><span>Discount</span><wbr></wbr><span><span>Amount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1386838215%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="best-discount-amount.html">bestDiscountAmount</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1231030583%2FProperties%2F35205944" anchor-label="bestDiscountPercentage" id="1231030583%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="best-discount-percentage.html"><span>best</span><wbr></wbr><span>Discount</span><wbr></wbr><span><span>Percentage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1231030583%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="best-discount-percentage.html">bestDiscountPercentage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1146217584%2FProperties%2F35205944" anchor-label="bestEffectivePrice" id="1146217584%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="best-effective-price.html"><span>best</span><wbr></wbr><span>Effective</span><wbr></wbr><span><span>Price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1146217584%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="best-effective-price.html">bestEffectivePrice</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-784026787%2FProperties%2F35205944" anchor-label="bestListPrice" id="-784026787%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="best-list-price.html"><span>best</span><wbr></wbr><span>List</span><wbr></wbr><span><span>Price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-784026787%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="best-list-price.html">bestListPrice</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2070087031%2FProperties%2F35205944" anchor-label="bookingCosts" id="-2070087031%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="booking-costs.html"><span>booking</span><wbr></wbr><span><span>Costs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2070087031%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="booking-costs.html">bookingCosts</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1774023134%2FProperties%2F35205944" anchor-label="conditions" id="1774023134%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="conditions.html"><span><span>conditions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1774023134%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="conditions.html">conditions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1132113617%2FProperties%2F35205944" anchor-label="firstAvailableDate" id="-1132113617%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="first-available-date.html"><span>first</span><wbr></wbr><span>Available</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1132113617%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="first-available-date.html">firstAvailableDate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-663393829%2FProperties%2F35205944" anchor-label="id" id="-663393829%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-663393829%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1031324733%2FProperties%2F35205944" anchor-label="lastAvailableDate" id="-1031324733%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-available-date.html"><span>last</span><wbr></wbr><span>Available</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1031324733%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="last-available-date.html">lastAvailableDate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="533493209%2FProperties%2F35205944" anchor-label="listPrice" id="533493209%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-price.html"><span>list</span><wbr></wbr><span><span>Price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="533493209%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="list-price.html">listPrice</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2052697113%2FProperties%2F35205944" anchor-label="noDate" id="-2052697113%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="no-date.html"><span>no</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052697113%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="no-date.html">noDate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1081609108%2FProperties%2F35205944" anchor-label="physicalProduct" id="-1081609108%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="physical-product.html"><span>physical</span><wbr></wbr><span><span>Product</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1081609108%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="physical-product.html">physicalProduct</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1038263205%2FProperties%2F35205944" anchor-label="productType" id="-1038263205%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="product-type.html"><span>product</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1038263205%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="product-type.html">productType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1043543316%2FProperties%2F35205944" anchor-label="title" id="-1043543316%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1043543316%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="title.html">title</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1765705791%2FProperties%2F35205944" anchor-label="unitPrice" id="1765705791%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unit-price.html"><span>unit</span><wbr></wbr><span><span>Price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1765705791%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="unit-price.html">unitPrice</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1323366164%2FProperties%2F35205944" anchor-label="visitGuaranteeCost" id="-1323366164%2FProperties%2F35205944" data-filterable-set=":queueup:core/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":queueup:core/commonMain" data-filterable-set=":queueup:core/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="visit-guarantee-cost.html"><span>visit</span><wbr></wbr><span>Guarantee</span><wbr></wbr><span><span>Cost</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1323366164%2FProperties%2F35205944"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":queueup:core/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="visit-guarantee-cost.html">visitGuaranteeCost</a><span class="token operator">: </span><a href="../../eu.queueup.models/-money/index.html">Money</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
