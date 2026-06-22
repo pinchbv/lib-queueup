@@ -504,8 +504,16 @@ $dokka.location:eu.queueup/DataConfig/DataConfig/#kotlin.String#kotlin.String#eu
 $dokka.location:eu.queueup/DataConfig/baseUrl/#/PointingToDeclaration/core/eu.queueup/-data-config/base-url.html
 $dokka.location:eu.queueup/DataConfig/campaignId/#/PointingToDeclaration/core/eu.queueup/-data-config/campaign-id.html
 $dokka.location:eu.queueup/DataConfig/retry/#/PointingToDeclaration/core/eu.queueup/-data-config/retry.html
+$dokka.location:eu.queueup/LogLevel.Debug///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}core/eu.queueup/-log-level/-debug/index.html
+$dokka.location:eu.queueup/LogLevel.Error///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}core/eu.queueup/-log-level/-error/index.html
+$dokka.location:eu.queueup/LogLevel.Info///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}core/eu.queueup/-log-level/-info/index.html
+$dokka.location:eu.queueup/LogLevel.Warning///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}core/eu.queueup/-log-level/-warning/index.html
+$dokka.location:eu.queueup/LogLevel///PointingToDeclaration/core/eu.queueup/-log-level/index.html
+$dokka.location:eu.queueup/LogLevel/entries/#/PointingToDeclaration/core/eu.queueup/-log-level/entries.html
+$dokka.location:eu.queueup/LogLevel/valueOf/#kotlin.String/PointingToDeclaration/core/eu.queueup/-log-level/value-of.html
+$dokka.location:eu.queueup/LogLevel/values/#/PointingToDeclaration/core/eu.queueup/-log-level/values.html
 $dokka.location:eu.queueup/Logger///PointingToDeclaration/core/eu.queueup/-logger/index.html
-$dokka.location:eu.queueup/Logger/log/#kotlin.String/PointingToDeclaration/core/eu.queueup/-logger/log.html
+$dokka.location:eu.queueup/Logger/log/#eu.queueup.LogLevel#kotlin.String/PointingToDeclaration/core/eu.queueup/-logger/log.html
 $dokka.location:eu.queueup/QueueUp///PointingToDeclaration/core/eu.queueup/-queue-up/index.html
 $dokka.location:eu.queueup/QueueUp/init/#eu.queueup.models.enums.Environment#kotlin.String#eu.queueup.Logger?/PointingToDeclaration/core/eu.queueup/-queue-up/init.html
 $dokka.location:eu.queueup/QueueUpClient///PointingToDeclaration/core/eu.queueup/-queue-up-client/index.html

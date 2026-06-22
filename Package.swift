@@ -2,8 +2,8 @@
 import PackageDescription
 
 // BEGIN KMMBRIDGE VARIABLES BLOCK (do not edit)
-let remoteKotlinUrl = "https://maven.pinch.nl/maven/eu/queueup/core-spm/0.0.1-alpha/core-spm-0.0.1-alpha.zip"
-let remoteKotlinChecksum = "ee5bbe0eafc45d7bbcf84ce349b1a00cd40e2bb4615c167260a755adca122c78"
+let remoteKotlinUrl = "https://maven.pinch.nl/maven/eu/queueup/core-spm/0.0.1-alpha02/core-spm-0.0.1-alpha02.zip"
+let remoteKotlinChecksum = "177d9b7d72d7caaeef14a630596bffb707b9c97851e38102460f1205bfd6b644"
 let packageName = "QueueUp"
 // END KMMBRIDGE BLOCK
 

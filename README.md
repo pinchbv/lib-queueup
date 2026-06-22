@@ -18,22 +18,32 @@ Objective-C / Swift framework.
 
 ## Quick start
 
-### Install (Android) [TODO: Update when complete]
+### Install (Android)
 
-The SDK is published as a regular Android library artifact:
+The SDK is published to PINCH's Maven repository. Declare it e.g. in settings.gradle(.kts).
 
-```kotlin
-dependencies {
-    implementation("todo-update-artifact")
+```groovy
+repositories {
+    google()
+    mavenCentral()
+    maven { url = uri("https://maven.pinch.nl/maven") }
 }
 ```
 
-### Install (iOS) [TODO: Update when complete]
+Then add the dependency to your project (e.g. in app/build.gradle(.kts)).
 
-The SDK ships as the `QueueUpCore` framework. Add it to your Xcode target and import it:
+```kotlin
+dependencies {
+    implementation("en.queueup:queueup:{x.y.z}")
+}
+```
+
+### Install (iOS)
+
+The SDK is available as package dependency using Swift Package Manager. To add it to your Xcode project, select File > Add Package Dependency and provide this repository for the Package URL:
 
 ```swift
-import QueueUpCore
+https://github.com/pinchbv/lib-queueup
 ```
 
 ## Initialization
@@ -60,7 +70,7 @@ val queueUp = QueueUp.init(
 MyApp.queueUp = QueueUp.shared.doInit(
     environment: .production,
     campaignId: "your-campaign-id",
-    logger: PrintLogger() // optional, conforms to QueueUpCore.Logger
+    logger: PrintLogger() // optional, conforms to QueueUp.Logger
 )
 ```
 
@@ -157,7 +167,7 @@ client.auth.isAuthenticated()
 // server round-trip
 client.auth.isAuthenticated(checkRemotely = true)
 
-// clears stored tokens
+// sends a logout request and clears the local tokens
 client.auth.logout()
 ```
 
